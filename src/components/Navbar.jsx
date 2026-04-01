@@ -1,8 +1,13 @@
 import { Link } from "react-scroll";
 
-const LINKS = ["About", "Skills", "Works"];
+const LINKS = {
+  zh: ["關於我", "技能", "作品"],
+  en: ["About", "Skills", "Works"],
+};
 
-export default function Navbar() {
+const TARGETS = ["about", "skills", "works"];
+
+export default function Navbar({ lang, setLang }) {
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0,
@@ -13,11 +18,12 @@ export default function Navbar() {
       borderBottom: "1px solid #222",
     }}>
       <span style={{ color: "white", fontWeight: "bold", fontSize: "1.2rem" }}>Ailly Wu</span>
-      <div style={{ display: "flex", gap: "32px" }}>
-        {LINKS.map(link => (
+
+      <div style={{ display: "flex", gap: "32px", alignItems: "center" }}>
+        {LINKS[lang].map((link, i) => (
           <Link
             key={link}
-            to={link.toLowerCase()}
+            to={TARGETS[i]}
             smooth={true}
             duration={500}
             style={{ color: "#aaa", cursor: "pointer", fontSize: "0.95rem", textDecoration: "none" }}
@@ -25,6 +31,18 @@ export default function Navbar() {
             {link}
           </Link>
         ))}
+
+        {/* 語言切換 */}
+        <button
+          onClick={() => setLang(lang === "zh" ? "en" : "zh")}
+          style={{
+            padding: "6px 16px", borderRadius: "20px",
+            border: "1px solid #444", background: "transparent",
+            color: "#aaa", cursor: "pointer", fontSize: "0.85rem",
+          }}
+        >
+          {lang === "zh" ? "EN" : "中文"}
+        </button>
       </div>
     </nav>
   );

@@ -1,24 +1,37 @@
 import { motion } from "framer-motion";
 
-export default function Hero() {
+const CONTENT = {
+  zh: {
+    role: "前端工程師",
+    desc: "擁有 10 年以上前端開發經驗，專注於打造流暢的使用者體驗。從 HTML/CSS/jQuery 到 React，持續學習與成長。",
+    btn: "查看作品",
+  },
+  en: {
+    role: "FRONTEND DEVELOPER",
+    desc: "Frontend developer with 10+ years of experience, focused on building smooth user experiences. Evolved from HTML/CSS/jQuery to React.",
+    btn: "View Works",
+  },
+};
+
+export default function Hero({ lang }) {
+  const c = CONTENT[lang];
+
   return (
     <div style={{
       minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "0 20px",
+      display: "flex", flexDirection: "column",
+      justifyContent: "center", alignItems: "center",
+      textAlign: "center", padding: "0 20px",
       background: "linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%)",
     }}>
       <motion.p
+        key={lang + "role"}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         style={{ color: "#e91e8c", fontSize: "1rem", letterSpacing: "4px", marginBottom: "16px" }}
       >
-        FRONTEND DEVELOPER
+        {c.role}
       </motion.p>
 
       <motion.h1
@@ -31,13 +44,13 @@ export default function Hero() {
       </motion.h1>
 
       <motion.p
+        key={lang + "desc"}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
         style={{ color: "#aaa", fontSize: "1.2rem", maxWidth: "600px", lineHeight: 1.8, marginBottom: "40px" }}
       >
-        擁有 5 年以上前端開發經驗，專注於打造流暢的使用者體驗。
-        從 HTML/CSS/jQuery 到 React，持續學習與成長。
+        {c.desc}
       </motion.p>
 
       <motion.div
@@ -49,20 +62,11 @@ export default function Hero() {
         <a href="https://github.com/aillywutw" target="_blank" rel="noreferrer" style={btnPrimary}>
           GitHub
         </a>
-        <a href="#works" style={btnSecondary}>
-          View Works
-        </a>
+        <a href="#works" style={btnSecondary}>{c.btn}</a>
       </motion.div>
     </div>
   );
 }
 
-const btnPrimary = {
-  padding: "14px 32px", background: "#e91e8c", color: "white",
-  borderRadius: "8px", textDecoration: "none", fontSize: "1rem",
-};
-const btnSecondary = {
-  padding: "14px 32px", background: "transparent", color: "white",
-  borderRadius: "8px", textDecoration: "none", fontSize: "1rem",
-  border: "1px solid #444",
-};
+const btnPrimary = { padding: "14px 32px", background: "#e91e8c", color: "white", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" };
+const btnSecondary = { padding: "14px 32px", background: "transparent", color: "white", borderRadius: "8px", textDecoration: "none", fontSize: "1rem", border: "1px solid #444" };
