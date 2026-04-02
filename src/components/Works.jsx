@@ -34,6 +34,14 @@ const WORKS = {
       repo: "https://github.com/aillywutw/member-dashboard",
       color: "#9c27b0",
     },
+    {
+      title: "Product Listing",
+      desc: "電商商品列表，支援搜尋、分類篩選、價格排序與購物車功能。",
+      tags: ["React", "DummyJSON API", "Axios", "Framer Motion"],
+      demo: "https://aillywutw.github.io/product-listing",
+      repo: "https://github.com/aillywutw/product-listing",
+      color: "#ff9800",
+    },
   ],
   en: [
     {
@@ -67,6 +75,14 @@ const WORKS = {
       demo: "https://aillywutw.github.io/member-dashboard",
       repo: "https://github.com/aillywutw/member-dashboard",
       color: "#9c27b0",
+    },
+    {
+      title: "Product Listing",
+      desc: "E-commerce product listing with search, category filter, price sort, and shopping cart.",
+      tags: ["React", "DummyJSON API", "Axios", "Framer Motion"],
+      demo: "https://aillywutw.github.io/product-listing",
+      repo: "https://github.com/aillywutw/product-listing",
+      color: "#ff9800",
     },
   ],
 };
