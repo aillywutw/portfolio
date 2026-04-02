@@ -26,6 +26,14 @@ const WORKS = {
       repo: "https://github.com/aillywutw/contact-forms",
       color: "#4caf50",
     },
+    {
+      title: "Member Dashboard",
+      desc: "具備 Firebase 認證、Protected Route、中英切換的會員後台系統。",
+      tags: ["React", "Firebase", "React Router", "Framer Motion"],
+      demo: "https://aillywutw.github.io/member-dashboard",
+      repo: "https://github.com/aillywutw/member-dashboard",
+      color: "#9c27b0",
+    },
   ],
   en: [
     {
@@ -51,6 +59,14 @@ const WORKS = {
       demo: "https://aillywutw.github.io/contact-forms",
       repo: "https://github.com/aillywutw/contact-forms",
       color: "#4caf50",
+    },
+    {
+      title: "Member Dashboard",
+      desc: "Member dashboard with Firebase auth, protected routes, and bilingual support.",
+      tags: ["React", "Firebase", "React Router", "Framer Motion"],
+      demo: "https://aillywutw.github.io/member-dashboard",
+      repo: "https://github.com/aillywutw/member-dashboard",
+      color: "#9c27b0",
     },
   ],
 };
