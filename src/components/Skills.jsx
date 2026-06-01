@@ -3,38 +3,54 @@ import { motion } from "framer-motion";
 const SKILLS = {
   zh: [
     {
-      category: "語言",
-      items: ["HTML", "CSS", "JavaScript", "TypeScript"],
+      category: "現代前端",
+      items: ["React", "Component-Based Architecture", "JavaScript (ES6+)", "HTML5", "CSS3"],
     },
     {
-      category: "框架 / 函式庫",
-      items: ["React", "jQuery", "Framer Motion"],
+      category: "傳統技術 / 函式庫",
+      items: ["jQuery", "AJAX", "JSON Integration"],
     },
     {
-      category: "工具 / 服務",
-      items: ["Git", "Firebase", "REST API", "RWD", "Vite"],
+      category: "效能 / UI/UX",
+      items: ["RWD", "Cross-Browser Optimization", "Performance Tuning", "Troubleshooting & Debugging"],
+    },
+    {
+      category: "工作流程 / 工具",
+      items: ["Git / GitHub", "Jira", "Slack", "Agile / Scrum"],
     },
     {
       category: "AI 工具",
-      items: ["Cursor", "ChatGPT", "Claude"],
+      items: ["Cursor", "ChatGPT", "Gemini", "Claude"],
+    },
+    {
+      category: "AI 認證",
+      items: ["Google AI Essentials", "Use AI Responsibly", "Discover the Art of Prompting", "Maximize Productivity With AI Tools"],
     },
   ],
   en: [
     {
-      category: "Languages",
-      items: ["HTML", "CSS", "JavaScript", "TypeScript"],
+      category: "Modern Frontend",
+      items: ["React", "Component-Based Architecture", "JavaScript (ES6+)", "HTML5", "CSS3"],
     },
     {
-      category: "Frameworks / Libraries",
-      items: ["React", "jQuery", "Framer Motion"],
+      category: "Legacy & Libraries",
+      items: ["jQuery", "AJAX", "JSON Integration"],
     },
     {
-      category: "Tools / Services",
-      items: ["Git", "Firebase", "REST API", "RWD", "Vite"],
+      category: "Performance & UI/UX",
+      items: ["RWD", "Cross-Browser Optimization", "Performance Tuning", "Troubleshooting & Debugging"],
+    },
+    {
+      category: "Workflow & Tools",
+      items: ["Git / GitHub", "Jira", "Slack", "Agile / Scrum"],
     },
     {
       category: "AI Tools",
-      items: ["Cursor", "ChatGPT", "Claude"],
+      items: ["Cursor", "ChatGPT", "Gemini", "Claude"],
+    },
+    {
+      category: "AI Certifications",
+      items: ["Google AI Essentials", "Use AI Responsibly", "Discover the Art of Prompting", "Maximize Productivity With AI Tools"],
     },
   ],
 };
