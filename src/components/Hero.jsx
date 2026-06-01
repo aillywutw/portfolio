@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const CONTENT = {
   zh: {
     role: "前端工程師",
-    desc: "擁有 10 年以上前端開發經驗，專注於打造流暢的使用者體驗。從 HTML/CSS/jQuery 到 React，持續學習與成長。",
+    desc: "擁有 5 年以上前端開發經驗，專注於打造流暢的使用者體驗。從 HTML/CSS/jQuery 到 React，善用 AI 工具（Cursor、ChatGPT、Claude）提升開發效率。",
     btn: "查看作品",
   },
   en: {
     role: "FRONTEND DEVELOPER",
-    desc: "Frontend developer with 10+ years of experience, focused on building smooth user experiences. Evolved from HTML/CSS/jQuery to React.",
+    desc: "Frontend developer with 5+ years of experience, focused on building smooth user experiences. Evolved from HTML/CSS/jQuery to React, leveraging AI tools (Cursor, ChatGPT, Claude) to boost productivity.",
     btn: "View Works",
   },
 };
@@ -53,16 +53,41 @@ export default function Hero({ lang }) {
         {c.desc}
       </motion.p>
 
+      {/* Buttons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
-        style={{ display: "flex", gap: "16px" }}
+        style={{ display: "flex", gap: "16px", marginBottom: "48px" }}
       >
         <a href="https://github.com/aillywutw" target="_blank" rel="noreferrer" style={btnPrimary}>
           GitHub
         </a>
         <a href="#works" style={btnSecondary}>{c.btn}</a>
+      </motion.div>
+
+      {/* Contact Info */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        style={{ display: "flex", gap: "24px", alignItems: "center" }}
+      >
+        
+          href="https://www.linkedin.com/in/ailly-wu-804a143b9/"
+          target="_blank"
+          rel="noreferrer"
+          style={contactLink}
+        >
+          💼 LinkedIn
+        </a>
+        <span style={{ color: "#444" }}>|</span>
+        
+          href="mailto:aillywutw@gmail.com"
+          style={contactLink}
+        >
+          ✉️ 你的Email
+        </a>
       </motion.div>
     </div>
   );
@@ -70,3 +95,4 @@ export default function Hero({ lang }) {
 
 const btnPrimary = { padding: "14px 32px", background: "#e91e8c", color: "white", borderRadius: "8px", textDecoration: "none", fontSize: "1rem" };
 const btnSecondary = { padding: "14px 32px", background: "transparent", color: "white", borderRadius: "8px", textDecoration: "none", fontSize: "1rem", border: "1px solid #444" };
+const contactLink = { color: "#aaa", textDecoration: "none", fontSize: "0.95rem", transition: "color 0.2s" };
