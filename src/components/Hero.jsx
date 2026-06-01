@@ -73,7 +73,7 @@ export default function Hero({ lang }) {
         transition={{ delay: 0.8, duration: 0.6 }}
         style={{ display: "flex", gap: "24px", alignItems: "center" }}
       >
-        
+        <a
           href="https://www.linkedin.com/in/ailly-wu-804a143b9/"
           target="_blank"
           rel="noreferrer"
@@ -82,11 +82,11 @@ export default function Hero({ lang }) {
           💼 LinkedIn
         </a>
         <span style={{ color: "#444" }}>|</span>
-        
+        <a
           href="mailto:ailly.wu.tw@gmail.com"
           style={contactLink}
         >
-          ✉️ 你的Email
+          ✉️ ailly.wu.tw@gmail.com
         </a>
       </motion.div>
     </div>
