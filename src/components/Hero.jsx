@@ -83,7 +83,7 @@ export default function Hero({ lang }) {
         </a>
         <span style={{ color: "#444" }}>|</span>
         
-          href="mailto:aillywutw@gmail.com"
+          href="mailto:ailly.wu.tw@gmail.com"
           style={contactLink}
         >
           ✉️ 你的Email
