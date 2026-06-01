@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const CONTENT = {
   zh: {
     role: "前端工程師",
-    desc: "擁有 5 年以上前端開發經驗，專注於打造流暢的使用者體驗。從 HTML/CSS/jQuery 到 React，善用 AI 工具（Cursor、ChatGPT、Claude）提升開發效率。",
+    desc: "擁有10年以上前端開發經驗，專注於打造流暢的使用者體驗。從 HTML/CSS/jQuery 到 React，善用 AI 工具（Cursor、ChatGPT、Claude）提升開發效率。",
     btn: "查看作品",
   },
   en: {
     role: "FRONTEND DEVELOPER",
-    desc: "Frontend developer with 5+ years of experience, focused on building smooth user experiences. Evolved from HTML/CSS/jQuery to React, leveraging AI tools (Cursor, ChatGPT, Claude) to boost productivity.",
+    desc: "Frontend developer with 10+ years of experience, focused on building smooth user experiences. Evolved from HTML/CSS/jQuery to React, leveraging AI tools (Cursor, ChatGPT, Claude) to boost productivity.",
     btn: "View Works",
   },
 };
